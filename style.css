@@ -14,7 +14,7 @@ body {
 }
 header,
 main {
-  padding: 15px;
+  padding: 10px;
 }
 header h1 {
   font-size: 12pt;
@@ -63,4 +63,68 @@ footer ul {
 footer ul li {
   list-style: none;
   margin-left: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  header ul {
+    display: flex;
+    align-items: center;
+  }
+
+  header ul li {
+    margin-left: 10px;
+  }
+
+  header .accented-button {
+    width: auto;
+  }
+
+  .info {
+    width: 50%;
+  }
+  .decor {
+    display: inline-block;
+    width: 50%;
+    position: relative;
+  }
+  .dot-one {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: rgba(247, 136, 167, 0.6);
+    border-radius: 50%;
+    display: inline-block;
+    right: 40px;
+  }
+  .dot-two {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background-color: rgba(247, 193, 162, 0.7);
+    border-radius: 50%;
+    display: inline-block;
+    right: 10px;
+    top: 50px;
+  }
+  .dot-three {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background-color: rgba(207, 130, 213, 0.6);
+    border-radius: 50%;
+    display: inline-block;
+    right: 0;
+    top: 20px;
+  }
 }
